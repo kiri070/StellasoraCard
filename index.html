@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <meta name="description" content="ステラソラのプロフィールカードを作ることができます。">
+    <title>Game Name Card</title>
+
+    <link rel="stylesheet" href="style.css?v=0.01">
+</head>
+
+<body>
+
+    <h1>巡遊者 カード</h1>
+
+    <div id="nameCard">
+
+        <div class="cardInfo">
+
+            <div class="playerName">
+                <h2>Player Name</h2>
+                <span id="playerName_area">魔王</span>
+            </div>
+
+            <div class="uid">
+                <p>UID</p>
+                <span id="uid_area">123456789</span>
+            </div>
+
+            <div class="profile">
+                <p>自己紹介</p>
+                <span id="profile_area">よろしくお願いします。</span>
+            </div>
+
+        </div>
+
+        <div class="favoriteCharacters">
+
+            <div class="character">
+                <p>お気に入りキャラクター １</p>
+                <div class="characterSelect">
+                    <img id="favorite_01" class="img_border">
+                    <span id="character01_name"></span>
+                </div>
+            </div>
+
+            <div class="character">
+                <p>お気に入りキャラクター ２</p>
+                <div class="characterSelect">
+                    <img id="favorite_02" class="img_border">
+                    <span id="character02_name"></span>
+                </div>
+            </div>
+
+            <div class="character">
+                <p>お気に入りキャラクター ３</p>
+                <div class="characterSelect">
+                    <img id="favorite_03" class="img_border">
+                    <span id="character03_name"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="input_area">
+        <fieldset>
+            <legend style="font-size:30px">入力欄</legend>
+            <button id="saveCard_button">カードを保存</button>
+            <h2>Player Name</h2>
+            <input type="text" placeholder="魔王" id="input_playerName">
+            <h2>UID</h2>
+            <input type="text" placeholder="123456789" id="input_uid">
+            <h2>自己紹介</h2>
+            <textarea placeholder="よろしくお願いします" id="input_profile"></textarea>
+
+            <h2 class="backgroundButton">背景</h2>
+
+            <div class="characterChoices">
+                <img src="Image/maou_chan.jpg" class="Background_Character" alt="魔王ちゃん">
+                <img src="Image/maou_kun.jpg" class="Background_Character" alt="魔王くん">
+            </div>
+
+            <h2>お気に入りキャラクター</h2>
+
+            <div class="favoriteSelect">
+                <div class="favoriteButton">お気に入りキャラクター1</div>
+
+                <div class="favoriteChoices">
+                    <img src="Image/Icon/Amber.png" class="selectCharacter_01" alt="コハク">
+                    <img src="Image/Icon/Ann.png" class="selectCharacter_01" alt="アンズ">
+                    <img src="Image/Icon/Canace.png" class="selectCharacter_01" alt="カナーチェ">
+                    <img src="Image/Icon/Caramel.png" class="selectCharacter_01" alt="キャラメル">
+                    <img src="Image/Icon/Chaton.png" class="selectCharacter_01" alt="シャトン">
+                    <img src="Image/Icon/Chitose.png" class="selectCharacter_01" alt="チトセ">
+                    <img src="Image/Icon/Chixia.png" class="selectCharacter_01" alt="チーシア">
+                    <img src="Image/Icon/Coronis.png" class="selectCharacter_01" alt="クルニス">
+                    <img src="Image/Icon/Cosette.png" class="selectCharacter_01" alt="コゼット">
+                    <img src="Image/Icon/Donna.png" class="selectCharacter_01" alt="トーナ">
+                    <img src="Image/Icon/Eleanor.png" class="selectCharacter_01" alt="エレノア">
+                    <img src="Image/Icon/Firefly.png" class="selectCharacter_01" alt="ホタル">
+                    <img src="Image/Icon/Firenze.png" class="selectCharacter_01" alt="フィレン">
+                    <img src="Image/Icon/Flora.png" class="selectCharacter_01" alt="フローラ">
+                    <img src="Image/Icon/Freesia.png" class="selectCharacter_01" alt="フリージア">
+                    <img src="Image/Icon/Fuyuka.png" class="selectCharacter_01" alt="フユカ">
+                    <img src="Image/Icon/Gerie.png" class="selectCharacter_01" alt="グレイ">
+                    <img src="Image/Icon/Iris.png" class="selectCharacter_01" alt="アヤメ">
+                    <img src="Image/Icon/Jinglin.png" class="selectCharacter_01" alt="ジンリン">
+                    <img src="Image/Icon/Karin.png" class="selectCharacter_01" alt="カリン">
+                    <img src="Image/Icon/Kasimira.png" class="selectCharacter_01" alt="カシミラ">
+                    <img src="Image/Icon/Laru.png" class="selectCharacter_01" alt="ラール">
+                    <img src="Image/Icon/Minova.png" class="selectCharacter_01" alt="ミネルバ">
+                    <img src="Image/Icon/Mistique.png" class="selectCharacter_01" alt="ミスティ">
+                    <img src="Image/Icon/Nanoha.png" class="selectCharacter_01" alt="ナノハ">
+                    <img src="Image/Icon/Nazuka.png" class="selectCharacter_01" alt="ナツカ">
+                    <img src="Image/Icon/Nazuna.png" class="selectCharacter_01" alt="ナズナ">
+                    <img src="Image/Icon/Noya.png" class="selectCharacter_01" alt="セイナ">
+                    <img src="Image/Icon/Otoha.png" class="selectCharacter_01" alt="オトハ">
+                    <img src="Image/Icon/Ridge.png" class="selectCharacter_01" alt="レイセン">
+                    <img src="Image/Icon/Shia.png" class="selectCharacter_01" alt="シア">
+                    <img src="Image/Icon/Shimiao.png" class="selectCharacter_01" alt="シーミャオ">
+                    <img src="Image/Icon/SnowishLaru.png" class="selectCharacter_01" alt="ラール（聖夜）">
+                    <img src="Image/Icon/Sparkla.png" class="selectCharacter_01" alt="スパクル">
+                    <img src="Image/Icon/SpringseekCoronis.png" class="selectCharacter_01" alt="クルニス（龍族風）">
+                    <img src="Image/Icon/SuntideWillow.png" class="selectCharacter_01" alt="ウィロー（水着）">
+                    <img src="Image/Icon/Teresa.png" class="selectCharacter_01" alt="テレサ">
+                    <img src="Image/Icon/Tilia.png" class="selectCharacter_01" alt="ティリア">
+                    <img src="Image/Icon/Wraith.png" class="selectCharacter_01" alt="レイス">
+                </div>
+            </div>
+
+            <div class="favoriteSelect">
+                <div class="favoriteButton">お気に入りキャラクター2</div>
+
+                <div class="favoriteChoices">
+                    <img src="Image/Icon/Amber.png" class="selectCharacter_02" alt="コハク">
+                    <img src="Image/Icon/Ann.png" class="selectCharacter_02" alt="アンズ">
+                    <img src="Image/Icon/Canace.png" class="selectCharacter_02" alt="カナーチェ">
+                    <img src="Image/Icon/Caramel.png" class="selectCharacter_02" alt="キャラメル">
+                    <img src="Image/Icon/Chaton.png" class="selectCharacter_02" alt="シャトン">
+                    <img src="Image/Icon/Chitose.png" class="selectCharacter_02" alt="チトセ">
+                    <img src="Image/Icon/Chixia.png" class="selectCharacter_02" alt="チーシア">
+                    <img src="Image/Icon/Coronis.png" class="selectCharacter_02" alt="クルニス">
+                    <img src="Image/Icon/Cosette.png" class="selectCharacter_02" alt="コゼット">
+                    <img src="Image/Icon/Donna.png" class="selectCharacter_02" alt="トーナ">
+                    <img src="Image/Icon/Eleanor.png" class="selectCharacter_02" alt="エレノア">
+                    <img src="Image/Icon/Firefly.png" class="selectCharacter_02" alt="ホタル">
+                    <img src="Image/Icon/Firenze.png" class="selectCharacter_02" alt="フィレン">
+                    <img src="Image/Icon/Flora.png" class="selectCharacter_02" alt="フローラ">
+                    <img src="Image/Icon/Freesia.png" class="selectCharacter_02" alt="フリージア">
+                    <img src="Image/Icon/Fuyuka.png" class="selectCharacter_02" alt="フユカ">
+                    <img src="Image/Icon/Gerie.png" class="selectCharacter_02" alt="グレイ">
+                    <img src="Image/Icon/Iris.png" class="selectCharacter_02" alt="アヤメ">
+                    <img src="Image/Icon/Jinglin.png" class="selectCharacter_02" alt="ジンリン">
+                    <img src="Image/Icon/Karin.png" class="selectCharacter_02" alt="カリン">
+                    <img src="Image/Icon/Kasimira.png" class="selectCharacter_02" alt="カシミラ">
+                    <img src="Image/Icon/Laru.png" class="selectCharacter_02" alt="ラール">
+                    <img src="Image/Icon/Minova.png" class="selectCharacter_02" alt="ミネルバ">
+                    <img src="Image/Icon/Mistique.png" class="selectCharacter_02" alt="ミスティ">
+                    <img src="Image/Icon/Nanoha.png" class="selectCharacter_02" alt="ナノハ">
+                    <img src="Image/Icon/Nazuka.png" class="selectCharacter_02" alt="ナツカ">
+                    <img src="Image/Icon/Nazuna.png" class="selectCharacter_02" alt="ナズナ">
+                    <img src="Image/Icon/Noya.png" class="selectCharacter_02" alt="セイナ">
+                    <img src="Image/Icon/Otoha.png" class="selectCharacter_02" alt="オトハ">
+                    <img src="Image/Icon/Ridge.png" class="selectCharacter_02" alt="レイセン">
+                    <img src="Image/Icon/Shia.png" class="selectCharacter_02" alt="シア">
+                    <img src="Image/Icon/Shimiao.png" class="selectCharacter_02" alt="シーミャオ">
+                    <img src="Image/Icon/SnowishLaru.png" class="selectCharacter_02" alt="ラール（聖夜）">
+                    <img src="Image/Icon/Sparkla.png" class="selectCharacter_02" alt="スパクル">
+                    <img src="Image/Icon/SpringseekCoronis.png" class="selectCharacter_02" alt="クルニス（龍族風）">
+                    <img src="Image/Icon/SuntideWillow.png" class="selectCharacter_02" alt="ウィロー（水着）">
+                    <img src="Image/Icon/Teresa.png" class="selectCharacter_02" alt="テレサ">
+                    <img src="Image/Icon/Tilia.png" class="selectCharacter_02" alt="ティリア">
+                    <img src="Image/Icon/Wraith.png" class="selectCharacter_02" alt="レイス">
+                </div>
+            </div>
+
+            <div class="favoriteSelect">
+                <div class="favoriteButton">お気に入りキャラクター3</div>
+
+                <div class="favoriteChoices">
+                    <img src="Image/Icon/Amber.png" class="selectCharacter_03" alt="コハク">
+                    <img src="Image/Icon/Ann.png" class="selectCharacter_03" alt="アンズ">
+                    <img src="Image/Icon/Canace.png" class="selectCharacter_03" alt="カナーチェ">
+                    <img src="Image/Icon/Caramel.png" class="selectCharacter_03" alt="キャラメル">
+                    <img src="Image/Icon/Chaton.png" class="selectCharacter_03" alt="シャトン">
+                    <img src="Image/Icon/Chitose.png" class="selectCharacter_03" alt="チトセ">
+                    <img src="Image/Icon/Chixia.png" class="selectCharacter_03" alt="チーシア">
+                    <img src="Image/Icon/Coronis.png" class="selectCharacter_03" alt="クルニス">
+                    <img src="Image/Icon/Cosette.png" class="selectCharacter_03" alt="コゼット">
+                    <img src="Image/Icon/Donna.png" class="selectCharacter_03" alt="トーナ">
+                    <img src="Image/Icon/Eleanor.png" class="selectCharacter_03" alt="エレノア">
+                    <img src="Image/Icon/Firefly.png" class="selectCharacter_03" alt="ホタル">
+                    <img src="Image/Icon/Firenze.png" class="selectCharacter_03" alt="フィレン">
+                    <img src="Image/Icon/Flora.png" class="selectCharacter_03" alt="フローラ">
+                    <img src="Image/Icon/Freesia.png" class="selectCharacter_03" alt="フリージア">
+                    <img src="Image/Icon/Fuyuka.png" class="selectCharacter_03" alt="フユカ">
+                    <img src="Image/Icon/Gerie.png" class="selectCharacter_03" alt="グレイ">
+                    <img src="Image/Icon/Iris.png" class="selectCharacter_03" alt="アヤメ">
+                    <img src="Image/Icon/Jinglin.png" class="selectCharacter_03" alt="ジンリン">
+                    <img src="Image/Icon/Karin.png" class="selectCharacter_03" alt="カリン">
+                    <img src="Image/Icon/Kasimira.png" class="selectCharacter_03" alt="カシミラ">
+                    <img src="Image/Icon/Laru.png" class="selectCharacter_03" alt="ラール">
+                    <img src="Image/Icon/Minova.png" class="selectCharacter_03" alt="ミネルバ">
+                    <img src="Image/Icon/Mistique.png" class="selectCharacter_03" alt="ミスティ">
+                    <img src="Image/Icon/Nanoha.png" class="selectCharacter_03" alt="ナノハ">
+                    <img src="Image/Icon/Nazuka.png" class="selectCharacter_03" alt="ナツカ">
+                    <img src="Image/Icon/Nazuna.png" class="selectCharacter_03" alt="ナズナ">
+                    <img src="Image/Icon/Noya.png" class="selectCharacter_03" alt="セイナ">
+                    <img src="Image/Icon/Otoha.png" class="selectCharacter_03" alt="オトハ">
+                    <img src="Image/Icon/Ridge.png" class="selectCharacter_03" alt="レイセン">
+                    <img src="Image/Icon/Shia.png" class="selectCharacter_03" alt="シア">
+                    <img src="Image/Icon/Shimiao.png" class="selectCharacter_03" alt="シーミャオ">
+                    <img src="Image/Icon/SnowishLaru.png" class="selectCharacter_03" alt="ラール（聖夜）">
+                    <img src="Image/Icon/Sparkla.png" class="selectCharacter_03" alt="スパクル">
+                    <img src="Image/Icon/SpringseekCoronis.png" class="selectCharacter_03" alt="クルニス（龍族風）">
+                    <img src="Image/Icon/SuntideWillow.png" class="selectCharacter_03" alt="ウィロー（水着）">
+                    <img src="Image/Icon/Teresa.png" class="selectCharacter_03" alt="テレサ">
+                    <img src="Image/Icon/Tilia.png" class="selectCharacter_03" alt="ティリア">
+                    <img src="Image/Icon/Wraith.png" class="selectCharacter_03" alt="レイス">
+                </div>
+            </div>
+
+        </fieldset>
+    </div>
+
+    <script src="script.js?v=0.01"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="save.js?v=0.01"></script>
+</body>
+
+</html>
