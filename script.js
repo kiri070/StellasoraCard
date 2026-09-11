@@ -113,3 +113,51 @@ for (const button of selectCharacter_03)
         character03_name.textContent = img.alt;
     });
 }
+
+
+//検索機能
+const search = document.getElementById("search");
+const icon_element = document.getElementsByClassName("favoriteChoices");
+
+const icon = document.querySelectorAll(
+    ".favoriteChoices .selectCharacter_01, " + 
+    ".favoriteChoices .selectCharacter_02, " + 
+    ".favoriteChoices .selectCharacter_03");
+
+search.addEventListener("input", (e) => {
+    const name = e.target.value;
+
+    //リセット
+    if(name.length === 0)
+    {
+        for(const item of icon)
+        {
+            item.style.display = "block";
+        }
+        return;
+    }
+
+    const searchName = toKatakana(name);
+
+    for(const item of icon)
+    {
+        const characterName = toKatakana(item.alt);
+
+        if(characterName.includes(searchName))
+        {
+            item.style.display = "block";
+        }
+        else
+        {
+            item.style.display = "none";
+        }
+    }
+    
+});
+
+function toKatakana(text)
+{
+    return text.replace(/[\u3041-\u3096]/g, (char) => {
+        return String.fromCharCode(char.charCodeAt(0) + 0x60);
+    });
+}
