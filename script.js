@@ -31,7 +31,7 @@ const nameCard = document.getElementById("nameCard");
 const characters = document.querySelectorAll(".characterChoices img");
 characters.forEach((character) => {
 
-    character.addEventListener("pointerdown", () => {
+    character.addEventListener("pointerup", () => {
 
         nameCard.style.backgroundImage =
             `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("${character.src}")`;
@@ -43,7 +43,7 @@ characters.forEach((character) => {
 const favoriteButton = document.getElementsByClassName("favoriteButton");
 for (const button of favoriteButton)
 {
-    button.addEventListener("pointerdown", () => {
+    button.addEventListener("pointerup", () => {
 
         const favoriteSelect = button.parentElement;
         const favoriteChoices = favoriteSelect.querySelector(".favoriteChoices");
@@ -64,7 +64,7 @@ for (const button of favoriteButton)
 const backgroundButton = document.querySelector(".backgroundButton");
 const characterChoices = document.querySelector(".characterChoices");
 
-backgroundButton.addEventListener("pointerdown", () => {
+backgroundButton.addEventListener("pointerup", () => {
 
     if (characterChoices.style.display === "flex")
     {
@@ -83,7 +83,7 @@ const character01_name = document.getElementById("character01_name");
 const favorite_01 = document.getElementById("favorite_01");
 for (const button of selectCharacter_01)
 {
-    button.addEventListener("pointerdown", (e) => {
+    button.addEventListener("pointerup", (e) => {
         const img = e.target;
         favorite_01.src = img.src;
         character01_name.textContent = img.alt;
@@ -95,7 +95,7 @@ const character02_name = document.getElementById("character02_name");
 const favorite_02 = document.getElementById("favorite_02");
 for (const button of selectCharacter_02)
 {
-    button.addEventListener("pointerdown", (e) => {
+    button.addEventListener("pointerup", (e) => {
         const img = e.target;
         favorite_02.src = img.src;
         character02_name.textContent = img.alt;
@@ -107,7 +107,7 @@ const character03_name = document.getElementById("character03_name");
 const favorite_03 = document.getElementById("favorite_03");
 for (const button of selectCharacter_03)
 {
-    button.addEventListener("pointerdown", (e) => {
+    button.addEventListener("pointerup", (e) => {
         const img = e.target;
         favorite_03.src = img.src;
         character03_name.textContent = img.alt;

@@ -316,3 +316,40 @@ fieldset
     content: " ▼";
     color: #aaa;
 }
+
+
+
+#updateNav
+{
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+}
+
+#updateNav a
+{
+    display: block;
+
+    padding: 8px 15px;
+
+    border: 1px solid #05ffea;
+    border-radius: 8px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+#updateNav a:hover
+{
+    background-color: rgba(5, 255, 234, 0.2);
+}
+
+#updateNav a:active
+{
+    transform: scale(0.95);
+}
